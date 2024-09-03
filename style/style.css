@@ -1,0 +1,274 @@
+/* Importação da fonte Poppins (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* 
+  ===== RESET E CONFIGURAÇÕES GERAIS =====
+*/
+* {
+    box-sizing: border-box; /* Define o modelo de caixa para incluir padding e border no width e height */
+}
+
+:root { /* Define variáveis CSS para cores primárias e secundárias */
+    --clr-primary: rgba(255, 37, 212, 1);
+    --clr-secondary: rgba(57, 63, 210, 1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão do corpo do texto como Poppins */
+    margin: 0; /* Remove as margens padrão do corpo do texto */
+    background-color: #f8f8f8;  /* Define a cor de fundo do corpo do texto */
+    color: #333; /* Define a cor do texto do corpo do texto */
+}
+
+.container { /* Define um contêiner com largura máxima e margens centralizadas */
+    max-width: 1200px; 
+    margin: 0 auto; /* Centraliza horizontalmente o contêiner */
+    padding: 0 20px; /* Adiciona um espaçamento interno (padding) ao contêiner */
+}
+
+/* 
+  ===== ESTILOS DO CABEÇALHO ===== 
+*/
+header { /* Estiliza o cabeçalho */
+    background-color: #fff; 
+    padding: 20px 0; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao cabeçalho */
+    position: fixed; /* Define o cabeçalho como fixo no topo da página */
+    width: 100%; /* Define a largura do cabeçalho como 100% da viewport */
+    top: 0; /* Posiciona o cabeçalho no topo da página */
+    z-index: 10; /* Define o índice de camada do cabeçalho para que fique acima de outros elementos */
+}
+
+header .container { /* Estiliza o contêiner dentro do cabeçalho */
+    display: flex; 
+    justify-content: space-between; /* Distribui o espaço entre os itens do cabeçalho */
+    align-items: center; /* Alinha os itens do cabeçalho verticalmente */
+}
+
+nav ul { /* Remove marcadores de lista e define o espaçamento entre os itens de navegação */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+nav li {
+    margin-left: 30px; /* Define a margem esquerda entre os itens de navegação */
+}
+
+nav a { /* Estiliza os links de navegação */
+    text-decoration: none; /* Remove a decoração de texto dos links */
+    color: #333; 
+    font-weight: 500; 
+    transition: color 0.3s ease; /* Adiciona uma transição suave à cor do link ao passar o mouse */
+}
+
+nav a:hover { /* Estiliza os links de navegação ao passar o mouse */
+    color: #007bff; /* Define a cor do link ao passar o mouse */
+}
+
+/* 
+  ===== ESTILOS DA SEÇÃO HERO ===== 
+*/
+#hero { 
+    background-color: #e9ecef; 
+    padding: 120px 0; 
+    text-align: center; 
+}
+
+#hero .container { /* Estiliza o contêiner dentro da seção "hero" */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.hero-content { /* Estiliza o conteúdo textual do "hero" */
+    text-align: left; 
+    margin-right: 50px; 
+}
+
+.hero-content h2 { /* Estiliza o título principal do "hero" */
+    font-size: 3em; 
+    color: #212529;
+    margin-bottom: 10px; 
+}
+
+.hero-content p { /* Estiliza o parágrafo do "hero" */
+    font-size: 1.2em; 
+    line-height: 1.6; 
+    color: #495057;
+}
+
+.hero-image { /* Estiliza a imagem do "hero" */
+    width: 400px; 
+    border-radius: 50%; 
+}
+
+/* 
+  ===== ESTILOS DA SEÇÃO SOBRE ===== 
+*/
+#sobre { 
+    padding: 80px 0; 
+    text-align: center; 
+}
+
+#sobre h2 { /* Estiliza o título da seção "sobre" */
+    font-size: 2.5em; 
+    color: #212529;
+    margin-bottom: 20px; 
+}
+
+/* 
+  ===== ESTILOS DA SEÇÃO PROJETOS ===== 
+*/
+#projetos { 
+    background-color: #e9ecef; 
+    padding: 80px 0; 
+    text-align: center; 
+}
+
+.projects-grid { /* Define um grid para os projetos */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cria colunas responsivas com largura mínima de 300px */
+    gap: 30px; /* Define o espaçamento entre os itens do grid */
+}
+
+.project { /* Estiliza cada projeto individualmente */
+    background-color: #fff;
+    border-radius: 8px; 
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.project img { /* Estiliza as imagens dos projetos */
+    width: 100%; 
+    border-radius: 8px; 
+    margin-bottom: 15px; 
+}
+
+/* 
+  ===== ESTILOS DA SEÇÃO HABILIDADES ===== 
+*/
+#habilidade { 
+    padding: 80px 0; 
+    text-align: center; 
+}
+
+#habilidade ul { /* Estiliza a lista de habilidades */
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: inline-flex; 
+    flex-wrap: wrap; /* Permite que os itens da lista sejam quebrados em várias linhas */
+    justify-content: center; /* Centraliza os itens da lista horizontalmente */
+}
+
+#habilidade li { /* Estiliza cada habilidade individualmente */
+    background-color: #f1f1f1; 
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 20px; 
+    margin: 5px; 
+    font-size: 1em; 
+}
+
+/* 
+  ===== ESTILOS DA SEÇÃO CONTATO ===== 
+*/
+#contato { 
+    padding: 80px 0;
+    background-color: #212529; 
+    color: #fff; 
+    text-align: center; 
+}
+
+#contato .container { /* Estiliza o contêiner dentro da seção "contato" */
+    text-align: center; 
+}
+
+#contato input,
+#contato textarea { /* Estiliza os campos de entrada de texto e a área de texto do formulário de contato */
+    width: 100%; 
+    padding: 15px; 
+    margin-bottom: 15px; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+/* 
+  ===== ESTILOS DO RODAPÉ ===== 
+*/
+footer { 
+    text-align: center; 
+    padding: 20px 0; 
+    background-color: #333; 
+    color: #fff; 
+}
+
+/* 
+  ===== ESTILOS DO BOTÃO ===== 
+*/
+.btn { /* Estiliza o botão */
+    display: inline-block; 
+    background-color: var(--clr-primary); /* Usa a variável CSS para a cor de fundo do botão */
+    color: #fff; 
+    padding: 12px 30px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave à cor de fundo do botão ao passar o mouse */
+}
+
+.btn:hover { /* Estiliza o botão ao passar o mouse */
+    background-color: var(--clr-secondary); /* Usa a variável CSS para a cor de fundo do botão ao passar o mouse */
+}
+
+/* 
+  ===== ESTILOS DE TEXTO COM GRADIENTE =====
+*/
+.text--gradient { /* Define um estilo de texto com gradiente */
+    background: -webkit-linear-gradient(
+        left,
+        var(--clr-primary),
+        var(--clr-secondary)
+        );
+    background-clip: text;    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text--gradient-hover:hover { /* Define um estilo de texto com gradiente ao passar o mouse */
+    background: -webkit-linear-gradient(
+        left,
+        var(--clr-primary),
+        var(--clr-secondary)
+        );
+    background-clip: text;    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 
+  ===== ESTILOS DA SEÇÃO DE PORTFÓLIO =====
+*/
+.text-portifolio { /* Estiliza o contêiner de texto do portfólio */
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Alinha os itens horizontalmente */
+}
+
+.text-portifolio a { /* Estiliza o link do portfólio */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.text-portifolio a:hover { /* Estiliza o link do portfólio ao passar o mouse */
+    background: -webkit-linear-gradient(
+        left,
+        var(--clr-primary),
+        var(--clr-secondary)
+        );
+    background-clip: text;    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

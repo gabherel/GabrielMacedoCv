@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport -->
+    <title>Gabriel Macedo - Portfólio</title> <!-- Define o título da página -->
+    <link rel="stylesheet" href="./style/style.css"> <!-- Importa o arquivo CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> <!-- Importa a fonte Poppins -->
+</head>
+<body>
+    <header> <!-- Cabeçalho da página -->
+        <div class="container"> 
+            <h1>&lt;Gabriel dos Santos Macedo&gt;</h1> 
+            <nav> <!-- Seção de navegação -->
+                <ul> 
+                    <li><a class="text--gradient-hover" href="#sobre">Sobre</a></li> 
+                    <li><a class="text--gradient-hover" href="#projetos">Projetos</a></li> 
+                    <li><a class="text--gradient-hover" href="#habilidade">Habilidades</a></li> 
+                    <li><a class="text--gradient-hover" href="#contato">Contato</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main> <!-- Seção principal da página -->
+        <section id="hero"> <!-- Seção de destaque -->
+            <div class="container"> 
+                <div class="hero-content"> 
+                    <h2>Olá, eu sou <span class="text--gradient">Gabriel dos Santos Macedo</span>,<br> Desenvolvedor Web</h2> 
+                    <p>Apaixonado por criar experiências digitais incríveis.</p> 
+                    <a href="#contato" class="btn">Entre em contato</a> 
+                </div>
+                <img src="./assets/avatar.svg" alt="Imagem de um avatar" class="hero-image">  
+            </div>
+        </section>
+
+        <section id="sobre"> <!-- Seção "sobre" -->
+            <div class="container">  
+                <h2>Sobre Mim</h2> 
+                <p>Olá! Sou Gabriel, um apaixonado por tecnologia e programação. Atualmente, curso Ciência de Dados, buscando aprimorar minhas habilidades e conhecimentos nessa área. A programação me fascina, e dedico meu tempo livre a projetos pessoais e à constante busca por aprimoramento. Sou um leitor ávido, especialmente quando o assunto é tecnologia, e adoro me manter atualizado sobre as últimas novidades do mundo tech. Com 27 anos, natural de São Paulo-SP, busco uma oportunidade de estágio em programação para contribuir com minhas habilidades e entusiasmo em um ambiente desafiador e inovador.</p> 
+            </div>
+        </section>
+
+        <section id="projetos"> <!-- Seção "projetos" -->
+            <div class="container">
+                <h2>Portfólio</h2>
+                <div class="text-portifolio">
+                    <p>Meu portifólio no <a href="https://github.com/gabherel">Github </a></p><img src="./assets/bxl-github.svg" alt="logo github">
+                </div>
+                <div class="img-portifolio">
+                    <a href="https://github.com/gabherel"><img src="./assets/protifolio.png" alt="Imagem do meu portifólio"></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidade"> <!-- Seção "habilidades" -->
+            <div class="container">
+                <h2>Formação</h2>
+                <p>Buscando aprimorar constantemente minhas habilidades, estou no segundo semestre do curso de Ciência de Dados, com duração total de cinco semestres. Dominar o universo da programação é o meu objetivo, e para isso, tenho me dedicado ao aprendizado de diversas linguagens e tecnologias. Minhas habilidades atuais incluem:</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>C#</li>
+                    <li>Lógica de Programação</li>
+                </ul>
+                <p>Além disso, possuo conhecimentos básicos em inglês, o que me permite navegar no mundo da programação com mais autonomia e explorar conteúdos internacionais. A cada dia, busco expandir meus conhecimentos e me tornar um profissional mais completo e versátil.</p>
+            </div>
+        </section>
+
+        <section id="contato"> <!-- Seção "contato" -->
+            <div class="container">
+                <h2>Contato</h2>
+                <form action="#" method="post"> <!-- Formulário de contato -->
+                    <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+                    <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                    <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer> <!-- Rodapé da página -->
+        <div class="container">
+            <p>© Gabriel Macedo - 2024</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>  </body>
+</html>
